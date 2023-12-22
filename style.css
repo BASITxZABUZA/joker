@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: capitalize;
+    overflow-x: hidden;
+    background-color: rgb(55, 55, 55);
+}
+li,a{
+    text-decoration: none;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.863);
+    letter-spacing: 3px;
+    transition: all 250ms ease-in-out;
+}
+#main{
+    background-image: url(https://cdn.zendalibros.com/wp-content/uploads/joker-joaquin-phoenix.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: fit-content;
+    width: 100vw;
+}
+.red{
+    position: absolute;
+    top:50%;
+    top: 47%;
+    right: -2%;
+    width: 50px;
+    height: 50px;
+    transform: translate(15px,0px);
+}
+.blur{
+    position: relative;
+    padding: 10px;
+    width: 50vw;
+    min-height: fit-content;
+    background-color: rgba(0, 0, 0, 0.68);
+    -webkit-backdrop-filter: blur(5px)!important;
+    backdrop-filter: blur(8px)!important;
+    border-right: 2px solid #fff;
+}
+.nav{
+    min-height: 10vh;
+    padding: 20px;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+li :hover{
+    color: rgb(213, 4, 4);
+    transition: all 500ms ease-in-out;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: aliceblue;
+    flex-direction: column;
+    height: 90vh;
+}
+.title h1 span{
+    color: rgb(213, 4, 4);
+    font-size: 90px;
+}
+.title h1:hover{
+color: maroon;
+    transition: all 500ms ease-in-out;  
+}
+
+.title{
+    display:flex ;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.title h2{
+    font-size: 1.5vh
+}
+.title h1{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 10vh;
+    transition: all 500ms ease-in-out;
+    line-height: 80px;
+    position: relative;
+
+}
+.j:before{
+    content: '';
+    background: #D50404;
+    height: 620px;
+    width: 12.3px;
+    position: absolute;
+    left: 5.2%;
+    bottom: 0%;
+    transform: translateY(-7%) translateX(85%);
+}
+.title span{
+    position: relative;
+}
+.r:after{
+    content: '';
+    background: #D50404;
+    height: 561px;
+    width: 12.3px;
+    position: absolute;
+    left: 76.2%;
+    bottom: 0%;
+    transform: translateY(89%) translateX(-290%);
+    z-index: -1;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2.5vw;
+}
+.bottom img{
+    height: 150px;
+    width: 250px;
+    border: 2px solid #D5392E;
+}
+@media screen and (max-width:1080px){
+    .bottom{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:720px){
+
+    .nav ul{
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .title h2{
+        font-size: 1.8vh;
+    }
+    .title h1{
+        font-size: 60px;
+    }
+    .bottom img{
+        height: 133px;
+        width: 210px;
+    }
+    .title h2{
+    line-height: 30px;
+    }
+    .red{
+    transform: translate(22px,0px);
+    }
+}
+@media screen and (max-width: 440px){
+    .title h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 440px){
+    .bottom img {
+    height: 114px;
+    width: 188px;
+}
+}
+@media screen and (max-width: 400px){
+    .title h2{
+        font-size: 3vw;
+    }
+    .bottom img {
+        height: 100px;
+        width: 155px;  
+}
+}
