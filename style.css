@@ -175,3 +175,9 @@ color: maroon;
         width: 155px;  
 }
 }
+@media screen and (min-width: 930px) {
+    body{
+        overflow: hidden;
+    }
+    
+}
